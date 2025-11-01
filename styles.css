@@ -225,7 +225,7 @@ img {
 .nav-divider {
     height: 1px;
     width: 100%;
-    background-color: rgba(163, 163, 163, 0.3);
+    background-color: var(--color-border-primary);
     flex-shrink: 0;
 }
 
@@ -687,7 +687,7 @@ html[data-theme="light"] .theme-icon-moon {
 }
 
 .badge-text-normal {
-    color: #24242b;
+    color: var(--color-on-layer-primary);
     text-transform: none;
 }
 
@@ -699,7 +699,7 @@ html[data-theme="light"] .theme-icon-moon {
 }
 
 .header-divider {
-    background-color: var(--color-gray-500);
+    background-color: var(--color-border-primary);
     height: 18px;
     width: 1px;
     flex-shrink: 0;
