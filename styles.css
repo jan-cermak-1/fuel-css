@@ -1,6 +1,6 @@
 /* CSS Variables - Design Tokens from Figma */
 :root {
-    /* Colors */
+    /* Colors - Light Mode (Default) */
     --color-layer-main-navigation: #111114;
     --color-layer-level-0: #f3f3f5;
     --color-layer-level-1: #ffffff;
@@ -81,6 +81,46 @@
     --line-height-medium: 18px;
     --line-height-headline-2: 30px;
     --line-height-headline-5: 12px;
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --color-layer-main-navigation: #111114;
+    --color-layer-level-0: #0f0f11;
+    --color-layer-level-1: #1a1a1c;
+    --color-layer-level-2: #242428;
+    --color-layer-transparent: rgba(255, 255, 255, 0.01);
+    --color-layer-warning: #4a3f1a;
+    --color-layer-danger: #3d1f1f;
+    --color-button-inverse: rgba(255, 255, 255, 0);
+    --color-button-invisible: rgba(255, 255, 255, 0);
+    --color-button-invisible-applied: rgba(208, 226, 255, 0.1);
+    --color-button-danger: #ff5a5a;
+    --color-button-primary: #4589ff;
+    --color-on-layer-primary: #e0e0e0;
+    --color-on-layer-secondary: #b0b0b0;
+    --color-on-layer-tertiary: #6d6d6d;
+    --color-on-layer-inverse: #f9f9fa;
+    --color-border-primary: rgba(255, 255, 255, 0.1);
+    --color-border-warning: #f6d84e;
+    --color-border-danger: #ff5a5a;
+    --color-scrollbar-thumb: #4a4a4a;
+    --color-shadow-inner: rgba(0, 0, 0, 0.3);
+    --color-shadow-drop-10: rgba(0, 0, 0, 0.4);
+    --color-shadow-drop-20: rgba(0, 0, 0, 0.5);
+    --color-shadow-drop-30: rgba(0, 0, 0, 0.6);
+    --color-on-layer-success: #6fcf97;
+    --color-on-layer-danger: #ff5a5a;
+    --color-layer-success: #1a3d26;
+    --color-border-success: #6fcf97;
+    --color-border-success-emphasis: #6fcf97;
+    --color-border-warning-emphasis: #f1c21b;
+    --color-border-default: #3a3a3c;
+    --color-chart-red: #ff5a5a;
+    --color-layer-level-3: #2a2a2e;
+    --color-gray-500: #4a4a4c;
+    --color-gray-600: #6d6d6d;
+    --color-danger: #ff5a5a;
 }
 
 /* Reset & Base Styles */
@@ -400,6 +440,39 @@ img {
 .nav-item[data-name="Settings"] .nav-item-icon img {
     width: 20px;
     height: 20px;
+}
+
+/* Theme Toggle Styles */
+.theme-icon {
+    width: 20px;
+    height: 20px;
+    display: none;
+    color: var(--color-on-layer-tertiary);
+    transition: color 0.3s ease;
+}
+
+.theme-icon.active {
+    display: block;
+}
+
+[data-theme="dark"] .theme-icon-sun {
+    display: block;
+}
+
+[data-theme="dark"] .theme-icon-moon {
+    display: none;
+}
+
+:root:not([data-theme="dark"]) .theme-icon-sun {
+    display: none;
+}
+
+:root:not([data-theme="dark"]) .theme-icon-moon {
+    display: block;
+}
+
+#theme-toggle:hover .theme-icon {
+    color: var(--color-on-layer-secondary);
 }
 
 .nav-item-label {
