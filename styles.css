@@ -519,11 +519,13 @@ img {
 .header-title {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-headline-2);
-    line-height: var(--line-height-headline-2);
+    font-size: 20px;
+    line-height: 30px;
     color: var(--color-on-layer-primary);
     letter-spacing: -0.017px;
-    white-space: pre;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
 }
 
 .header-badge {
