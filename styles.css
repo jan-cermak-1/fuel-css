@@ -344,6 +344,16 @@ img {
     opacity: 0.63;
 }
 
+/* Dark mode - invert icons to be visible */
+[data-theme="dark"] .nav-item:not(.nav-item-active) .nav-item-icon img {
+    opacity: 1;
+    filter: brightness(0) invert(1);
+}
+
+[data-theme="dark"] .nav-item-active .nav-item-icon img {
+    filter: brightness(0) invert(1);
+}
+
 /* Home icon specific styles */
 .nav-home-icon-wrapper {
     position: relative;
