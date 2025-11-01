@@ -194,6 +194,7 @@ img {
     gap: 0;
     align-items: flex-start;
     min-height: 0;
+    max-height: 100%;
     overflow-y: auto;
     overflow-x: clip;
     padding: 0;
@@ -208,6 +209,7 @@ img {
     padding: 0;
     width: 100%;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .nav-item {
