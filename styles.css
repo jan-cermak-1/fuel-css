@@ -133,7 +133,7 @@ img {
 .platform-navigation {
     width: 60px;
     min-width: 60px;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--color-layer-main-navigation);
     display: flex;
     flex-direction: column;
@@ -153,6 +153,7 @@ img {
     width: 100%;
     gap: var(--space-4);
     justify-content: space-between;
+    min-height: 0;
 }
 
 .nav-logo {
