@@ -465,13 +465,24 @@ img {
     text-align: center;
 }
 
-/* Command Area */
+/* Command Area - expands when side content is closed */
 .command-area {
     flex: 1 1 0;
     min-width: 0;
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
+    transition: width 0.3s ease;
+}
+
+/* When side content is closed, command area expands */
+.side-content.closed ~ .command-area,
+.command-area:has(~ .side-content.closed) {
+    flex: 1 1 0;
+}
+
+body:has(.side-content.closed) .command-area {
+    flex: 1 1 0;
 }
 
 .main-header {
@@ -605,7 +616,7 @@ img {
     min-height: 0;
     overflow-x: clip;
     overflow-y: auto;
-    padding: var(--space-5);
+    padding: 36px;
     width: 100%;
     min-width: 0;
 }
@@ -1753,6 +1764,12 @@ img {
 
 .side-content.closed .notifications-panel {
     display: none;
+}
+
+/* When side content is closed, command area expands to fill space */
+.command-center-wrapper:has(.side-content.closed) .command-area {
+    flex: 1 1 0;
+    max-width: none;
 }
 
 @media (max-width: 1600px) {
