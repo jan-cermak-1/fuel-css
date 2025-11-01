@@ -152,6 +152,7 @@ img {
     height: 100%;
     width: 100%;
     gap: var(--space-4);
+    justify-content: space-between;
 }
 
 .nav-logo {
@@ -193,7 +194,8 @@ img {
     gap: 0;
     align-items: flex-start;
     min-height: 0;
-    overflow: clip;
+    overflow-y: auto;
+    overflow-x: clip;
     padding: 0;
     width: 100%;
 }
@@ -364,6 +366,7 @@ img {
     justify-content: flex-end;
     flex-shrink: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 .nav-add-button {
