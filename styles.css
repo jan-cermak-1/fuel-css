@@ -230,11 +230,11 @@ img {
 }
 
 .nav-item-active {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .nav-item-active .nav-item-icon img {
-    filter: brightness(1.5);
+    filter: brightness(0) invert(1);
 }
 
 .nav-item-active .nav-item-label {
@@ -272,6 +272,7 @@ img {
     transform: translate(-50%, -50%);
     display: block;
     max-width: none;
+    filter: brightness(0) saturate(100%) invert(63%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
 /* Specific icon sizes from Figma */
@@ -347,7 +348,7 @@ img {
     font-weight: var(--font-weight-bold);
     font-size: 10px;
     line-height: 12px;
-    color: var(--color-on-layer-tertiary);
+    color: #9d9da0;
     text-transform: uppercase;
     letter-spacing: 0.01px;
     white-space: nowrap;
@@ -372,7 +373,7 @@ img {
 }
 
 .nav-add-button {
-    background-color: var(--color-button-primary);
+    background-color: #0F62FE;
     width: 100%;
     height: 36px;
     border-radius: var(--border-radius-pill);
@@ -380,7 +381,7 @@ img {
     gap: var(--space-2);
     align-items: center;
     justify-content: center;
-    padding: var(--space-1);
+    padding: 3px;
     flex-shrink: 0;
     border: none;
     cursor: pointer;
@@ -394,6 +395,18 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.nav-add-icon img {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    max-width: none;
 }
 
 .nav-add-icon img {
