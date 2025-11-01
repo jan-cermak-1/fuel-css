@@ -232,7 +232,7 @@ img {
 }
 
 .nav-item-active {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-item-active .nav-item-icon img {
@@ -240,7 +240,7 @@ img {
 }
 
 .nav-item-active .nav-item-label {
-    color: #ffffff;
+    color: #9d9da0;
 }
 
 .nav-item-full {
@@ -279,7 +279,44 @@ img {
 
 .nav-item:not(.nav-item-active) .nav-item-icon img {
     opacity: 0.63;
-    filter: grayscale(100%);
+}
+
+/* Home icon specific styles */
+.nav-home-icon-wrapper {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-home-icon {
+    position: absolute;
+    inset: 12.5%;
+    width: 75%;
+    height: 75%;
+    display: block;
+    max-width: none;
+}
+
+.nav-home-window {
+    position: absolute;
+    left: 9px;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    display: block;
+    max-width: none;
+}
+
+.nav-item[data-name="Home"] .nav-item-icon {
+    overflow: visible;
+}
+
+.nav-item[data-name="Home"] .nav-item-icon img {
+    opacity: 1;
+    filter: brightness(0) invert(1);
 }
 
 /* Specific icon sizes from Figma */
