@@ -949,7 +949,7 @@
         </div>
         
         <!-- Side Content -->
-        <div class="side-content" data-node-id="1:28650">
+        <div class="side-content" data-node-id="1:28650" id="sideContent">
             <!-- Notifications -->
             <div class="notifications-panel" data-node-id="1:28652">
                 <!-- Notifications Header -->
@@ -1140,8 +1140,8 @@
             <!-- Right Bar -->
             <div class="right-bar" data-node-id="1:28651">
                 <div class="right-bar-header">
-                    <button class="right-bar-button">
-                        <img src="http://localhost:3845/assets/f3f53544124954e1c94c8135bbf96ed692990829.svg" alt="Close">
+                    <button class="right-bar-button" id="toggleSideContent" aria-label="Toggle side content">
+                        <img src="http://localhost:3845/assets/f3f53544124954e1c94c8135bbf96ed692990829.svg" alt="Close" id="toggleIcon">
                     </button>
                     <div class="right-bar-divider">
                         <img src="http://localhost:3845/assets/82fa2b7526a7dd60c706b14a63dc57fdca7870d0.svg" alt="Divider">
@@ -1167,6 +1167,33 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        // Toggle side content open/close
+        const toggleButton = document.getElementById('toggleSideContent');
+        const sideContent = document.getElementById('sideContent');
+        const toggleIcon = document.getElementById('toggleIcon');
+        
+        // Load state from localStorage
+        const isClosed = localStorage.getItem('sideContentClosed') === 'true';
+        if (isClosed) {
+            sideContent.classList.add('closed');
+            toggleIcon.style.transform = 'rotate(180deg)';
+        }
+        
+        toggleButton.addEventListener('click', function() {
+            sideContent.classList.toggle('closed');
+            const isNowClosed = sideContent.classList.contains('closed');
+            localStorage.setItem('sideContentClosed', isNowClosed);
+            
+            // Rotate icon when closed
+            if (isNowClosed) {
+                toggleIcon.style.transform = 'rotate(180deg)';
+            } else {
+                toggleIcon.style.transform = 'rotate(0deg)';
+            }
+        });
+    </script>
 </body>
 </html>
 
