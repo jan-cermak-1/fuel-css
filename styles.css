@@ -409,13 +409,6 @@ img {
     max-width: none;
 }
 
-.nav-add-icon img {
-    width: 11px;
-    height: 11px;
-    display: block;
-    max-width: none;
-}
-
 .nav-general {
     display: flex;
     flex-direction: column;
