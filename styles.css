@@ -123,7 +123,10 @@
     --color-danger: #ff5a5a;
 }
 
-/* Reset & Base Styles */
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -153,7 +156,10 @@ img {
     height: auto;
 }
 
-/* Main Layout */
+/* ==========================================================================
+   Main Layout
+   ========================================================================== */
+
 .command-center-wrapper {
     display: flex;
     width: 100%;
@@ -169,7 +175,10 @@ img {
     }
 }
 
-/* Platform Navigation */
+/* ==========================================================================
+   Platform Navigation
+   ========================================================================== */
+
 .platform-navigation {
     width: 60px;
     min-width: 60px;
@@ -294,22 +303,31 @@ img {
     gap: 9px;
 }
 
+/* Navigation Item Labels */
+.nav-item-label {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 10px;
+    line-height: 12px;
+    color: #9d9da0;
+    text-transform: uppercase;
+    letter-spacing: 0.01px;
+    white-space: nowrap;
+    text-align: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
 /* Hide labels in compact nav items - they are shown on hover/expand in real app */
 .nav-item:not(.nav-item-full) .nav-item-label {
     display: none;
 }
 
+/* Full nav item labels */
 .nav-item-full .nav-item-label {
     display: block;
+    flex: 1 1 0;
     text-align: center;
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-bold);
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 0.01px;
-    color: #9d9da0;
-    text-transform: uppercase;
-    white-space: nowrap;
 }
 
 .nav-item-icon {
@@ -487,32 +505,6 @@ html[data-theme="light"] .theme-icon-moon {
     filter: brightness(0) invert(1);
 }
 
-.nav-item-label {
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-bold);
-    font-size: 10px;
-    line-height: 12px;
-    color: #9d9da0;
-    text-transform: uppercase;
-    letter-spacing: 0.01px;
-    white-space: nowrap;
-    text-align: center;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.nav-item-full .nav-item-label {
-    flex: 1 1 0;
-    text-align: center;
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-bold);
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 0.01px;
-    color: #9d9da0;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
 
 .nav-bottom {
     display: flex;
@@ -588,7 +580,10 @@ html[data-theme="light"] .theme-icon-moon {
     letter-spacing: 0.01px;
 }
 
-/* Command Area */
+/* ==========================================================================
+   Command Area
+   ========================================================================== */
+
 .command-area {
     flex: 1 1 0;
     min-width: 0;
@@ -774,6 +769,10 @@ html[data-theme="light"] .theme-icon-moon {
         max-width: 100%;
     }
 }
+
+/* ==========================================================================
+   Widgets Layout
+   ========================================================================== */
 
 /* Upper Widgets Row */
 .upper-widgets-row {
@@ -1237,7 +1236,10 @@ html[data-theme="light"] .theme-icon-moon {
     height: 1px;
 }
 
-/* Objectives Section */
+/* ==========================================================================
+   Objectives Section
+   ========================================================================== */
+
 .objectives-section {
     display: flex;
     flex-direction: column;
@@ -1892,7 +1894,10 @@ html[data-theme="light"] .theme-icon-moon {
     height: 1px;
 }
 
-/* Side Content */
+/* ==========================================================================
+   Side Content (Notifications Panel & Right Bar)
+   ========================================================================== */
+
 .side-content {
     width: 540px;
     min-width: 400px;
