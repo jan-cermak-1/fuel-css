@@ -1761,6 +1761,16 @@ img {
     max-width: none;
 }
 
+/* Ensure content area and wrapper expand properly */
+.command-center-wrapper:has(.side-content.closed) .content-area {
+    flex: 1 1 0;
+}
+
+.command-center-wrapper:has(.side-content.closed) .content-wrapper {
+    max-width: none;
+    width: 100%;
+}
+
 @media (max-width: 1600px) {
     .side-content {
         width: 400px;
