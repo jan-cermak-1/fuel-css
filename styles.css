@@ -481,6 +481,12 @@ html[data-theme="light"] .theme-icon-moon {
     color: var(--color-on-layer-secondary);
 }
 
+/* Dark mode - Help and Settings icons */
+[data-theme="dark"] .nav-item[data-name="Help"] .nav-item-icon img,
+[data-theme="dark"] .nav-item[data-name="Settings"] .nav-item-icon img {
+    filter: brightness(0) invert(1);
+}
+
 .nav-item-label {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-bold);
