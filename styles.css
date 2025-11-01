@@ -272,6 +272,9 @@ img {
     transform: translate(-50%, -50%);
     display: block;
     max-width: none;
+}
+
+.nav-item:not(.nav-item-active) .nav-item-icon img {
     filter: brightness(0) saturate(100%) invert(63%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
