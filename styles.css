@@ -317,8 +317,12 @@ img {
     overflow: visible;
 }
 
-.nav-item[data-name="Home"] .nav-item-icon img {
+.nav-item[data-name="Home"] .nav-item-icon svg {
     opacity: 1;
+    filter: brightness(0) invert(1);
+}
+
+.nav-item[data-name="Home"] .nav-home-window svg {
     filter: brightness(0) invert(1);
 }
 
