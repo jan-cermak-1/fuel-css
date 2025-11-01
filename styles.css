@@ -289,16 +289,16 @@ img {
     position: relative;
     width: 24px;
     height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: clip;
+    border-radius: 6px;
+    flex-shrink: 0;
 }
 
 .nav-home-icon {
     position: absolute;
     inset: 12.5%;
-    width: 75%;
-    height: 75%;
+    width: auto;
+    height: auto;
     display: block;
     max-width: none;
 }
