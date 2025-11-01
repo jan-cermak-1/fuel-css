@@ -262,14 +262,12 @@ img {
     height: 24px;
     position: relative;
     flex-shrink: 0;
-    overflow: clip;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-item-icon img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     display: block;
     max-width: none;
     width: 18px;
@@ -278,7 +276,8 @@ img {
 }
 
 .nav-item:not(.nav-item-active) .nav-item-icon img {
-    filter: brightness(0) saturate(100%) invert(63%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    opacity: 0.63;
+    filter: grayscale(100%);
 }
 
 /* Specific icon sizes from Figma */
@@ -290,21 +289,16 @@ img {
 .nav-item[data-name="Publisher"] .nav-item-icon img {
     width: 18px;
     height: 20px;
-    top: calc(50% - 1.001px);
 }
 
 .nav-item[data-name="Community"] .nav-item-icon img {
     width: 19.758px;
     height: 18.976px;
-    left: calc(50% - 0.072px);
-    top: calc(50% - 0.333px);
 }
 
 .nav-item[data-name="Care"] .nav-item-icon img {
     width: 19px;
     height: 18px;
-    left: calc(50% + 1.5px);
-    top: calc(50% - 1px);
 }
 
 .nav-item[data-name="Content"] .nav-item-icon img {
@@ -315,15 +309,11 @@ img {
 .nav-item[data-name="UCG"] .nav-item-icon img {
     width: 18px;
     height: 22.137px;
-    left: calc(50% + 3px);
-    top: calc(50% - 0.383px);
 }
 
 .nav-item[data-name="Influencers"] .nav-item-icon img {
     width: 20.669px;
     height: 20px;
-    left: 1.8px;
-    top: 2px;
 }
 
 .nav-item[data-name="Rating & Reviews"] .nav-item-icon img {
@@ -334,13 +324,11 @@ img {
 .nav-item[data-name="Bot"] .nav-item-icon img {
     width: 20px;
     height: 18px;
-    top: calc(50% - 1px);
 }
 
 .nav-item[data-name="Agent"] .nav-item-icon img {
     width: 18px;
     height: 17.842px;
-    top: calc(50% - 0.079px);
 }
 
 .nav-item[data-name="Help"] .nav-item-icon img,
