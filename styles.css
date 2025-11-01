@@ -970,11 +970,11 @@ img {
 .trend-widget-title {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-headline-3);
-    line-height: var(--line-height-medium);
+    font-size: 16px;
+    line-height: 24px;
     color: var(--color-on-layer-primary);
     letter-spacing: -0.011px;
-    white-space: pre;
+    white-space: nowrap;
 }
 
 .trend-widget-select {
@@ -983,6 +983,31 @@ img {
     align-items: center;
     padding: var(--space-2);
     border-radius: var(--border-radius-medium);
+}
+
+.select-text {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-on-layer-primary);
+    letter-spacing: -0.011px;
+    white-space: nowrap;
+}
+
+.select-icon {
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-icon img {
+    width: 100%;
+    height: 100%;
 }
 
 .trend-widget-content {
@@ -1022,8 +1047,8 @@ img {
 .trend-item-title {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-medium);
-    line-height: var(--line-height-medium);
+    font-size: 13px;
+    line-height: 18px;
     color: var(--color-on-layer-primary);
     height: 18px;
     overflow: hidden;
@@ -1035,8 +1060,8 @@ img {
 .trend-item-description {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: 11px;
+    line-height: 16px;
     color: var(--color-on-layer-secondary);
     letter-spacing: 0.005px;
     width: 100%;
@@ -1045,8 +1070,8 @@ img {
 .trend-item-keywords {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: 11px;
+    line-height: 16px;
     color: var(--color-on-layer-secondary);
     letter-spacing: 0.005px;
     width: 100%;
