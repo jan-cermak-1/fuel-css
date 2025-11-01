@@ -552,13 +552,30 @@ img {
 .badge-icon {
     width: 18px;
     height: 18px;
-    overflow: hidden;
+    overflow: visible;
     flex-shrink: 0;
+    position: relative;
 }
 
 .badge-icon img {
     width: 9px;
     height: 9px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.badge-icon::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #148134;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+    border: 1.5px solid var(--color-layer-level-1);
 }
 
 .badge-text {
@@ -572,7 +589,7 @@ img {
 }
 
 .badge-text-normal {
-    color: var(--color-on-layer-primary);
+    color: #24242b;
     text-transform: none;
 }
 
