@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Command center mobile dashboard - Analytics and objectives management interface">
+    <meta name="keywords" content="dashboard, analytics, command center, objectives, mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Command center - Mobile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="mobile-body">
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+        <nav class="mobile-drawer-content">
+            <div class="mobile-drawer-header">
+                <div class="mobile-drawer-logo">
+                    <img src="assets/f3aae7a0dbf6f44dfd76bedd856fba2f84e12d8b.svg" alt="Emplifi Logo" class="logo-img">
+                </div>
+                <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="mobile-drawer-nav">
+                <a href="#" class="mobile-nav-item mobile-nav-item-active">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <div class="nav-home-icon-wrapper">
+                            <div class="nav-home-icon">
+                                <svg width="100%" height="100%" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M18 9.41042V16.2993C18 17.2358 17.2617 18 16.357 18H1.64298C0.738302 18 0 17.2358 0 16.2993V9.37812C0 8.57083 0.31196 7.8066 0.852688 7.23611L7.10225 0.767013C8.07972 -0.244792 9.66031 -0.255555 10.6482 0.734723L17.1161 7.22535C17.688 7.79583 18 8.5816 18 9.39965V9.41042Z" fill="url(#paint0_linear_home_mobile)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_home_mobile" x1="-1.40639" y1="2.43692" x2="23.9956" y2="20.1468" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#71A9FF"/>
+                                            <stop offset="1" stop-color="#415FFF"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="nav-home-window">
+                                <svg width="100%" height="100%" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M3 6C4.65685 6 6 4.65686 6 3C6 1.34315 4.65685 0 3 0C1.34314 0 0 1.34315 0 3C0 4.65686 1.34314 6 3 6Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="mobile-nav-item-label">Home</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/8ea4e6f493a50f91f6a03c59a7009c5507635cb9.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">Unified Analytics</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/ca4d626fbd6e60685c0fbbfc60de1e45e205996e.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">Publisher</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/1b722c7487888151b0e3b92f805772c54398b475.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">Community</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/190c0e9a7b5c7c206e85b9b6440f4f0a01459011.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">CARE</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/bb41040efc634b86e2b4b31831d835c7d646f41d.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">Content</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/70743c14cc29aaea09f00de4bd275934970cb6f7.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">UCG</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/75a92c0fee581bfc8c211a3d417a2fbc2f73b59f.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">Influencers</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/c00ec6e3daaa1f0ac7446bca67e204d6545f0e9b.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">Rating & Reviews</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/767ba94dd01f56ec8b2c2cec10ee50ff9a37004b.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">Bot</span>
+                </a>
+                
+                <a href="#" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <img src="assets/6936d070646c7a25ec1ae9f4f2baca6979885e52.svg" alt="">
+                    </div>
+                    <span class="mobile-nav-item-label">Agent</span>
+                </a>
+            </div>
+            
+            <div class="mobile-drawer-divider"></div>
+            
+            <div class="mobile-drawer-bottom">
+                <button class="mobile-nav-item" id="mobile-notifications-toggle">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M10 2C7.23858 2 5 4.23858 5 7V11L3 14V15H17V14L15 11V7C15 4.23858 12.7614 2 10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.5 15C7.5 16.3807 8.61929 17.5 10 17.5C11.3807 17.5 12.5 16.3807 12.5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span class="mobile-nav-item-label">Notifications</span>
+                </button>
+                
+                <a href="index.html" class="mobile-nav-item">
+                    <div class="mobile-nav-item-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M16.5 3.5L6.5 13.5M6.5 3.5L16.5 13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <span class="mobile-nav-item-label">Desktop Version</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Mobile Notifications Panel -->
+    <div class="mobile-notifications-panel" id="mobileNotificationsPanel">
+        <div class="mobile-notifications-overlay" id="mobileNotificationsOverlay"></div>
+        <div class="mobile-notifications-content">
+            <header class="mobile-notifications-header">
+                <h2 class="mobile-notifications-title">Notifications</h2>
+                <button class="mobile-notifications-close" id="mobileNotificationsClose" aria-label="Close notifications">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </header>
+            <div class="mobile-notifications-list">
+                <!-- Notification items from index.html -->
+                <div class="notification-item">
+                    <div class="notification-icon notification-icon-default">
+                        <img src="assets/879dfa55c67939e96bf420e64bbd18949bcf5f3c.svg" alt="Notification">
+                    </div>
+                    <div class="notification-content">
+                        <div class="notification-header">
+                            <h3 class="notification-headline">Say Hello to New Emplifi platform!</h3>
+                            <span class="notification-time">1 day ago</span>
+                        </div>
+                        <div class="notification-message-area">
+                            <img src="assets/1939ea4533bf3e507bfe41f4087c826088619571.png" alt="Preview" class="notification-image">
+                            <p class="notification-message">We worked hard during this past two week to bring this amazing change of your UI. Take a time and enjoy this prototype, this is the future of our new platform.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="notification-item">
+                    <div class="notification-icon notification-icon-warning">
+                        <img src="assets/1e8076ed2ea51ce8c99aad7cfee6f64ab2d62618.svg" alt="Warning">
+                    </div>
+                    <div class="notification-content">
+                        <div class="notification-header">
+                            <h3 class="notification-headline">Best performing post to focus on</h3>
+                            <span class="notification-time">1 day ago</span>
+                        </div>
+                        <div class="notification-message-area">
+                            <p class="notification-message">You have new best-performing post "fb scheduled" you should focus on on Aris.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="notification-item">
+                    <div class="notification-icon notification-icon-danger">
+                        <img src="assets/9b2cbfe4b9914060b9e57b1260ef5cde5c78ba7e.svg" alt="Danger">
+                    </div>
+                    <div class="notification-content">
+                        <div class="notification-header">
+                            <h3 class="notification-headline">Case Time to assign has been breached!</h3>
+                            <span class="notification-time">1 day ago</span>
+                        </div>
+                        <div class="notification-message-area">
+                            <p class="notification-message">Case #1342 Time to assign milestone has been breached.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-wrapper">
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <div class="mobile-header-content">
+                <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <h1 class="mobile-header-title">Command center</h1>
+                <button class="mobile-theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="theme-icon theme-icon-sun" aria-hidden="true">
+                        <path d="M10 3V1M10 19V17M17 10H19M1 10H3M16.364 3.636L14.95 5.05M5.05 14.95L3.636 16.364M16.364 16.364L14.95 14.95M5.05 5.05L3.636 3.636M15 10C15 12.7614 12.7614 15 10 15C7.23858 15 5 12.7614 5 10C5 7.23858 7.23858 5 10 5C12.7614 5 15 7.23858 15 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="theme-icon theme-icon-moon" aria-hidden="true">
+                        <path d="M17.293 13.293C16.9707 14.7697 16.2032 16.1375 15.0945 17.2116C13.9858 18.2857 12.5863 19.0173 11.0673 19.3127C9.54838 19.6082 7.96727 19.4566 6.52688 18.8767C5.08649 18.2969 3.84817 17.3122 2.96675 16.0446C2.08534 14.777 1.59986 13.2791 1.56626 11.7425C1.53266 10.2059 1.95231 8.69086 2.77804 7.38935C3.60377 6.08784 4.80078 5.05486 6.21386 4.41729C7.62694 3.77971 9.19558 3.56479 10.7328 3.79717C12.27 4.02955 13.7103 4.70154 14.8767 5.72866C16.0431 6.75577 16.8851 8.09499 17.293 9.60699C17.293 9.60699 17.293 10.95 17.293 13.293Z" fill="currentColor"/>
+                        <circle cx="14.5" cy="6.5" r="6.5" fill="var(--color-layer-level-0)"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-header-badge">
+                <span class="badge-text">Custom</span>
+            </div>
+        </header>
+
+        <!-- Mobile Content -->
+        <main class="mobile-content">
+            <!-- Value Widgets -->
+            <div class="mobile-widget-section">
+                <div class="mobile-value-widget">
+                    <div class="widget-header">
+                        <div class="widget-header-content">
+                            <p class="widget-title">Number of engagements evolution</p>
+                        </div>
+                    </div>
+                    <div class="widget-additional-info">
+                        <div class="widget-aggregation">
+                            <span class="aggregation-text">Last 30 Days</span>
+                        </div>
+                        <div class="widget-badges">
+                            <div class="widget-badge">
+                                <span class="badge-text">POST LEVEL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-container">
+                        <div class="widget-value">
+                            <div class="widget-metric">
+                                <p class="metric-value">931</p>
+                                <p class="metric-label">Engagements</p>
+                            </div>
+                            <div class="widget-relative-value">
+                                <div class="relative-value-positive">
+                                    <div class="arrow-up-icon">
+                                        <img src="assets/26ace46a7ee7233efdf204115c6a2e2dfa0e5940.svg" alt="Arrow up">
+                                    </div>
+                                    <span class="relative-value-text positive">+26%</span>
+                                </div>
+                                <span class="relative-value-label">vs previous period</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-line-chart">
+                        <div class="chart-container">
+                            <img src="assets/419a48d1deb4807bf24f90379c78b8358b1b63ac.svg" alt="Chart" class="chart-image">
+                        </div>
+                        <div class="chart-dates">
+                            <span>Jan 01</span>
+                            <span>Jan 31</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-value-widget">
+                    <div class="widget-header">
+                        <div class="widget-header-content">
+                            <p class="widget-title">Cross platform followers evolution</p>
+                        </div>
+                    </div>
+                    <div class="widget-additional-info">
+                        <div class="widget-aggregation">
+                            <span class="aggregation-text">Last 30 Days</span>
+                        </div>
+                        <div class="widget-badges">
+                            <div class="widget-badge">
+                                <span class="badge-text">PROFILE LEVEL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-container">
+                        <div class="widget-value">
+                            <div class="widget-metric">
+                                <p class="metric-value">138.04 M</p>
+                                <p class="metric-label">Followers</p>
+                            </div>
+                            <div class="widget-relative-value">
+                                <div class="relative-value-positive">
+                                    <div class="arrow-up-icon">
+                                        <img src="assets/26ace46a7ee7233efdf204115c6a2e2dfa0e5940.svg" alt="Arrow up">
+                                    </div>
+                                    <span class="relative-value-text positive">+26%</span>
+                                </div>
+                                <span class="relative-value-label">vs previous period</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-line-chart">
+                        <div class="chart-container">
+                            <img src="assets/419a48d1deb4807bf24f90379c78b8358b1b63ac.svg" alt="Chart" class="chart-image">
+                        </div>
+                        <div class="chart-dates">
+                            <span>Jan 01</span>
+                            <span>Jan 31</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-value-widget">
+                    <div class="widget-header">
+                        <div class="widget-header-content">
+                            <p class="widget-title">Number of impressions evolution</p>
+                        </div>
+                    </div>
+                    <div class="widget-additional-info">
+                        <div class="widget-aggregation">
+                            <span class="aggregation-text">Last 30 Days</span>
+                        </div>
+                        <div class="widget-badges">
+                            <div class="widget-badge">
+                                <span class="badge-text">POST LEVEL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-container">
+                        <div class="widget-value">
+                            <div class="widget-metric">
+                                <p class="metric-value">40 734</p>
+                                <p class="metric-label">Content impressions</p>
+                            </div>
+                            <div class="widget-relative-value">
+                                <div class="relative-value-positive">
+                                    <div class="arrow-up-icon">
+                                        <img src="assets/26ace46a7ee7233efdf204115c6a2e2dfa0e5940.svg" alt="Arrow up">
+                                    </div>
+                                    <span class="relative-value-text positive">+26%</span>
+                                </div>
+                                <span class="relative-value-label">vs previous period</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-line-chart">
+                        <div class="chart-container">
+                            <img src="assets/419a48d1deb4807bf24f90379c78b8358b1b63ac.svg" alt="Chart" class="chart-image">
+                        </div>
+                        <div class="chart-dates">
+                            <span>Jan 01</span>
+                            <span>Jan 31</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-value-widget">
+                    <div class="widget-header">
+                        <div class="widget-header-content">
+                            <p class="widget-title">Number of content evolution</p>
+                        </div>
+                    </div>
+                    <div class="widget-additional-info">
+                        <div class="widget-aggregation">
+                            <span class="aggregation-text">Last 30 Days</span>
+                        </div>
+                        <div class="widget-badges">
+                            <div class="widget-badge">
+                                <span class="badge-text">POST LEVEL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-container">
+                        <div class="widget-value">
+                            <div class="widget-metric">
+                                <p class="metric-value">203</p>
+                                <p class="metric-label">Content pieces</p>
+                            </div>
+                            <div class="widget-relative-value">
+                                <div class="relative-value-positive">
+                                    <div class="arrow-up-icon">
+                                        <img src="assets/26ace46a7ee7233efdf204115c6a2e2dfa0e5940.svg" alt="Arrow up">
+                                    </div>
+                                    <span class="relative-value-text positive">+26%</span>
+                                </div>
+                                <span class="relative-value-label">vs previous period</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-line-chart">
+                        <div class="chart-container">
+                            <img src="assets/419a48d1deb4807bf24f90379c78b8358b1b63ac.svg" alt="Chart" class="chart-image">
+                        </div>
+                        <div class="chart-dates">
+                            <span>Jan 01</span>
+                            <span>Jan 31</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trend Widget -->
+            <div class="mobile-trend-widget-section">
+                <div class="mobile-trend-widget">
+                    <div class="trend-widget-header">
+                        <div class="widget-x-icon">
+                            <img src="assets/70fecfca464d6fc970583ef64be077c8f75998ed.svg" alt="X">
+                        </div>
+                        <div class="trend-widget-title-wrap">
+                            <p class="trend-widget-title">Trending in</p>
+                            <div class="trend-widget-select">
+                                <span class="select-text">Germany</span>
+                                <div class="select-icon">
+                                    <img src="assets/51016e237f4d2f26741154a5f2b78826b3ac164e.svg" alt="Caret">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trend-widget-content">
+                        <div class="trend-item">
+                            <div class="trend-item-wrap">
+                                <p class="trend-item-title">Memorial day</p>
+                                <p class="trend-item-description">Memorial Day honors fallen service members with parades, concerts, and tributes across the nation. Social conversations highlight unity, gratitude, and freedom, as users share patriotic visuals and remembrance messages celebrating courage and togetherness.</p>
+                            </div>
+                            <p class="trend-item-keywords"><span class="keywords-label">Keywords:</span> Remembrance, Valor, Togetherness, Festivities, Tribute</p>
+                            <div class="trend-item-divider">
+                                <img src="assets/8fcbf4c301bea55740b2db958bb3149a9053f820.svg" alt="Divider">
+                            </div>
+                        </div>
+                        
+                        <div class="trend-item">
+                            <div class="trend-item-wrap">
+                                <p class="trend-item-title">Sports Therapy</p>
+                                <p class="trend-item-description">Sports therapy plays a crucial role in helping athletes recover from injuries and enhance their performance. By combining physical rehabilitation with specialized training techniques, sports therapists ensure that individuals can safely return to their favorite activities while minimizing the risk of future injuries.</p>
+                            </div>
+                            <p class="trend-item-keywords"><span class="keywords-label">Keywords: </span>Recovery, Enhancement, Prevention, Rehabilitation, Return</p>
+                            <div class="trend-item-divider">
+                                <img src="assets/8fcbf4c301bea55740b2db958bb3149a9053f820.svg" alt="Divider">
+                            </div>
+                        </div>
+                        
+                        <div class="trend-item">
+                            <div class="trend-item-wrap">
+                                <p class="trend-item-title">Cultural Beats</p>
+                                <p class="trend-item-description">Cultural Beats during Memorial Day weekend brought communities together through vibrant parades, lively parties, and heartfelt family gatherings. It was a time to celebrate freedom while honoring the courageous individuals who sacrificed for it.</p>
+                            </div>
+                            <p class="trend-item-keywords"><span class="keywords-label">Keywords: </span>Unity, Valor, Reunion, Festivities, Joy</p>
+                            <div class="trend-item-divider">
+                                <img src="assets/8fcbf4c301bea55740b2db958bb3149a9053f820.svg" alt="Divider">
+                            </div>
+                        </div>
+                        
+                        <div class="trend-item">
+                            <div class="trend-item-wrap">
+                                <p class="trend-item-title">Film Scores</p>
+                                <p class="trend-item-description">Film scores play a crucial role in shaping the emotional landscape of movies. They enhance storytelling by evoking feelings and setting the tone, whether it's the suspense of a thriller or the joy of a romantic comedy. Iconic composers like Hans Zimmer and John Williams have created unforgettable melodies that resonate with audiences long after the credits roll.</p>
+                            </div>
+                            <p class="trend-item-keywords"><span class="keywords-label">Key words: </span>Emotion, Heroes, Gatherings, Celebration, Joy</p>
+                            <div class="trend-item-divider">
+                                <img src="assets/8fcbf4c301bea55740b2db958bb3149a9053f820.svg" alt="Divider">
+                            </div>
+                        </div>
+                        
+                        <div class="trend-item">
+                            <div class="trend-item-wrap">
+                                <p class="trend-item-title">Emerging Artists</p>
+                                <p class="trend-item-description">Emerging artists showcased their talents over Memorial Day weekend, with vibrant exhibitions and live performances. This celebration not only highlighted their creativity but also paid tribute to the sacrifices of those who fought for our freedom.</p>
+                            </div>
+                            <p class="trend-item-keywords"><span class="keywords-label">Key words: </span>Tribute, Heroes, Gathering, Festivities, Artistry</p>
+                            <div class="trend-item-divider">
+                                <img src="assets/8fcbf4c301bea55740b2db958bb3149a9053f820.svg" alt="Divider">
+                            </div>
+                        </div>
+                        
+                        <div class="trend-item">
+                            <div class="trend-item-wrap">
+                                <p class="trend-item-title">Activism Anthems</p>
+                                <p class="trend-item-description">Activism anthems resonate deeply, inspiring movements and uniting voices for change. These powerful songs capture the spirit of resistance and hope, encouraging listeners to stand up for justice and equality. From protest marches to social media campaigns, these anthems fuel the fight for a better world.</p>
+                            </div>
+                            <p class="trend-item-keywords">Key words: Activism, Unity, Togetherness, Protest, Hope</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objectives Section -->
+            <div class="mobile-objectives-section">
+                <div class="objectives-headline">
+                    <h2 class="objectives-title">Objectives</h2>
+                    <div class="objectives-links">
+                        <a href="#" class="objectives-link">Start with new objective</a>
+                        <div class="objectives-divider-vertical">
+                            <img src="assets/0d4d87eee6584fd7abd2d2285d2a29be37d7e32b.svg" alt="Divider">
+                        </div>
+                        <a href="#" class="objectives-link">
+                            Go to the board
+                            <img src="assets/7b1029fddb2d3a79371c60c8fb96bb4d48c68502.svg" alt="Arrow" class="arrow-right-icon">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Chart Widgets -->
+                <div class="mobile-chart-widgets">
+                    <div class="mobile-chart-widget">
+                        <div class="chart-widget-header">
+                            <div class="chart-widget-header-content">
+                                <p class="chart-widget-title">Performance Measurement & ROI Optimization</p>
+                            </div>
+                            <div class="chart-widget-action">
+                                <button class="chart-widget-button">
+                                    <img src="assets/27eea7c9864353525fa6b07172ca5a044becefc2.svg" alt="More">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="chart-widget-additional-info">
+                            <div class="widget-aggregation">
+                                <span class="aggregation-text">Last 30 Days</span>
+                            </div>
+                            <div class="widget-badges">
+                                <div class="widget-badge widget-badge-success">
+                                    <span class="badge-text">ON TRACK</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-widget-evolution">
+                            <div class="chart-widget-actual-number">
+                                <div class="chart-widget-number">
+                                    <div class="chart-number-row">
+                                        <span class="chart-number-value">48.3</span>
+                                        <div class="chart-relative-value-positive">
+                                            <div class="arrow-up-icon">
+                                                <img src="assets/13ca2775b44393bb99945b4fdc92d11824520bac.svg" alt="Arrow up">
+                                            </div>
+                                            <span class="relative-value-text positive">+21%</span>
+                                        </div>
+                                    </div>
+                                    <p class="chart-number-label">Customer Acquisition Efficiency Index (CAEI)</p>
+                                </div>
+                                <div class="chart-widget-goal">
+                                    <div class="goal-icon">
+                                        <img src="assets/13e250b37655cbbe439f081f5a5ee228fa052e85.svg" alt="Goal">
+                                    </div>
+                                    <span class="goal-text">Below 50 CAEI</span>
+                                </div>
+                            </div>
+                            <div class="chart-widget-chart">
+                                <div class="chart-visualization">
+                                    <div class="chart-goal-area"></div>
+                                    <div class="chart-columns">
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 27.6px;"></div>
+                                            <div class="chart-part" style="height: 27.6px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 34.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 13.8px;"></div>
+                                            <div class="chart-part" style="height: 13.8px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 12.5px;"></div>
+                                            <div class="chart-part" style="height: 12.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 19.7px;"></div>
+                                            <div class="chart-part" style="height: 19.7px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 27.6px;"></div>
+                                            <div class="chart-part" style="height: 27.6px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 12.5px;"></div>
+                                            <div class="chart-part" style="height: 12.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 8.1px;"></div>
+                                            <div class="chart-part" style="height: 8.1px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 46px;"></div>
+                                            <div class="chart-part" style="height: 46px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 34.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 34.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 18.3px;"></div>
+                                            <div class="chart-part" style="height: 83px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 18px;"></div>
+                                            <div class="chart-part" style="height: 84px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 5.5px;"></div>
+                                            <div class="chart-part" style="height: 116px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 15.3px;"></div>
+                                            <div class="chart-part" style="height: 15.3px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 27.6px;"></div>
+                                            <div class="chart-part" style="height: 27.6px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 34.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 46px;"></div>
+                                            <div class="chart-part" style="height: 46px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 34.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 34.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 46px;"></div>
+                                            <div class="chart-part" style="height: 46px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 34.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 32px;"></div>
+                                            <div class="chart-part" style="height: 106px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 69px;"></div>
+                                            <div class="chart-part" style="height: 69px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 27px;"></div>
+                                            <div class="chart-part" style="height: 111px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 69px;"></div>
+                                            <div class="chart-part" style="height: 69px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 26px;"></div>
+                                            <div class="chart-part" style="height: 112px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 9px;"></div>
+                                            <div class="chart-part" style="height: 129px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 1px;"></div>
+                                            <div class="chart-part" style="height: 137px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="chart-average-line">
+                                        <div class="chart-average-label">AVG</div>
+                                        <div class="chart-average-line-visual"></div>
+                                    </div>
+                                </div>
+                                <div class="chart-axis-x">
+                                    <span>Jan 01</span>
+                                    <span>Jan 29</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Chart Widget: OFF TRACK -->
+                    <div class="mobile-chart-widget">
+                        <div class="chart-widget-header">
+                            <div class="chart-widget-header-content">
+                                <p class="chart-widget-title">Performance Measurement & ROI Optimization</p>
+                            </div>
+                            <div class="chart-widget-action">
+                                <button class="chart-widget-button">
+                                    <img src="assets/27eea7c9864353525fa6b07172ca5a044becefc2.svg" alt="More">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="chart-widget-additional-info">
+                            <div class="widget-aggregation">
+                                <span class="aggregation-text">Last 30 Days</span>
+                            </div>
+                            <div class="widget-badges">
+                                <div class="widget-badge widget-badge-danger">
+                                    <span class="badge-text">OFF TRACK</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-widget-evolution">
+                            <div class="chart-widget-actual-number">
+                                <div class="chart-widget-number">
+                                    <div class="chart-number-row">
+                                        <span class="chart-number-value">12.2</span>
+                                        <div class="chart-relative-value-negative">
+                                            <div class="arrow-down-icon">
+                                                <img src="assets/c1f6b9580275d0c4c67a025a5b8e2e14db5319fa.svg" alt="Arrow down">
+                                            </div>
+                                            <span class="relative-value-text negative">-74%</span>
+                                        </div>
+                                    </div>
+                                    <p class="chart-number-label">Customer Acquisition Efficiency Index (CAEI)</p>
+                                </div>
+                                <div class="chart-widget-goal">
+                                    <div class="goal-icon">
+                                        <img src="assets/13e250b37655cbbe439f081f5a5ee228fa052e85.svg" alt="Goal">
+                                    </div>
+                                    <span class="goal-text">Below 50 CAEI</span>
+                                </div>
+                            </div>
+                            <div class="chart-widget-chart">
+                                <div class="chart-visualization">
+                                    <div class="chart-goal-area"></div>
+                                    <div class="chart-columns">
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 18.3px;"></div>
+                                            <div class="chart-part" style="height: 119.7px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 18px;"></div>
+                                            <div class="chart-part" style="height: 120px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 5.5px;"></div>
+                                            <div class="chart-part" style="height: 132.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 15.3px;"></div>
+                                            <div class="chart-part" style="height: 122.7px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 27.6px;"></div>
+                                            <div class="chart-part" style="height: 110.4px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 103.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 46px;"></div>
+                                            <div class="chart-part" style="height: 92px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 103.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 103.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 46px;"></div>
+                                            <div class="chart-part" style="height: 92px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 34.5px;"></div>
+                                            <div class="chart-part" style="height: 103.5px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 32px;"></div>
+                                            <div class="chart-part" style="height: 106px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 69px;"></div>
+                                            <div class="chart-part" style="height: 69px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 27px;"></div>
+                                            <div class="chart-part" style="height: 111px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 69px;"></div>
+                                            <div class="chart-part" style="height: 69px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 26px;"></div>
+                                            <div class="chart-part" style="height: 112px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 9px;"></div>
+                                            <div class="chart-part" style="height: 129px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-part" style="height: 138px;"></div>
+                                        </div>
+                                        <div class="chart-column">
+                                            <div class="chart-spacer" style="height: 1px;"></div>
+                                            <div class="chart-part" style="height: 137px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="chart-average-line chart-average-line-offtrack">
+                                        <div class="chart-average-label">AVG</div>
+                                        <div class="chart-average-line-visual"></div>
+                                    </div>
+                                </div>
+                                <div class="chart-axis-x">
+                                    <span>Jan 01</span>
+                                    <span>Jan 29</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Objectives List Widget -->
+                <div class="mobile-objectives-widget">
+                    <div class="objectives-list-header">
+                        <div class="objectives-list-header-content">
+                            <p class="objectives-list-title">Your top objectives</p>
+                        </div>
+                    </div>
+                    <div class="objectives-list-content">
+                        <div class="objectives-section-headline">
+                            <p class="section-headline-text">YOU ARE ALMOST THERE</p>
+                        </div>
+                        
+                        <div class="objective-row">
+                            <div class="objective-content">
+                                <p class="objective-text">Maximizing Audience Engagement through Social Media Strategies in the Evolving Landscape of Entertainment</p>
+                            </div>
+                            <div class="objective-progress">
+                                <span class="progress-percentage">89%</span>
+                                <div class="progress-bar progress-bar-success">
+                                    <div class="progress-bar-fill" style="width: 89%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="objective-row">
+                            <div class="objective-content">
+                                <p class="objective-text">Maximizing Audience Engagement through Social Media Strategies in the Evolving Landscape of Entertainment</p>
+                            </div>
+                            <div class="objective-progress">
+                                <span class="progress-percentage">89%</span>
+                                <div class="progress-bar progress-bar-success">
+                                    <div class="progress-bar-fill" style="width: 89%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="objectives-divider">
+                            <img src="assets/8576e6167cd77638a88b440f6823da43b2929cc5.svg" alt="Divider">
+                        </div>
+                        
+                        <div class="objectives-section-headline">
+                            <p class="section-headline-text">IN PROGRESS</p>
+                        </div>
+                        
+                        <div class="objective-row">
+                            <div class="objective-content">
+                                <p class="objective-text">Performance Measurement & ROI Optimization</p>
+                            </div>
+                            <div class="objective-progress">
+                                <span class="progress-percentage">56%</span>
+                                <div class="progress-bar progress-bar-warning">
+                                    <div class="progress-bar-fill" style="width: 56%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="objective-row">
+                            <div class="objective-content">
+                                <p class="objective-text">Performance Measurement & ROI Optimization</p>
+                            </div>
+                            <div class="objective-progress">
+                                <span class="progress-percentage">56%</span>
+                                <div class="progress-bar progress-bar-warning">
+                                    <div class="progress-bar-fill" style="width: 56%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="objective-row">
+                            <div class="objective-content">
+                                <p class="objective-text">Maximizing Audience Engagement through Social Media Strategies in the Evolving Landscape of Entertainment</p>
+                            </div>
+                            <div class="objective-progress">
+                                <span class="progress-percentage">56%</span>
+                                <div class="progress-bar progress-bar-warning">
+                                    <div class="progress-bar-fill" style="width: 56%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="objective-row">
+                            <div class="objective-content">
+                                <p class="objective-text">Maximizing Audience Engagement through Social Media Strategies in the Evolving Landscape of Entertainment</p>
+                            </div>
+                            <div class="objective-progress">
+                                <span class="progress-percentage">56%</span>
+                                <div class="progress-bar progress-bar-warning">
+                                    <div class="progress-bar-fill" style="width: 56%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="objectives-divider">
+                            <img src="assets/8576e6167cd77638a88b440f6823da43b2929cc5.svg" alt="Divider">
+                        </div>
+                        
+                        <div class="objectives-section-headline">
+                            <p class="section-headline-text">WAITING FOR YOU</p>
+                        </div>
+                        
+                        <div class="objective-row">
+                            <div class="objective-content">
+                                <p class="objective-text">Maximizing Audience Engagement through Social Media Strategies in the Evolving Landscape of Entertainment</p>
+                            </div>
+                            <div class="objective-progress">
+                                <span class="progress-status">Not started</span>
+                                <div class="progress-bar progress-bar-default">
+                                    <div class="progress-bar-fill-default"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="objective-row">
+                            <div class="objective-content">
+                                <p class="objective-text">Maximizing Audience Engagement through Social Media Strategies in the Evolving Landscape of Entertainment</p>
+                            </div>
+                            <div class="objective-progress">
+                                <span class="progress-status">Not started</span>
+                                <div class="progress-bar progress-bar-default">
+                                    <div class="progress-bar-fill-default"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+            
+            // Theme Toggle Handler for Mobile
+            const themeToggle = document.getElementById('mobile-theme-toggle');
+            const htmlElement = document.documentElement;
+            
+            /**
+             * Initialize theme from localStorage or default to light
+             */
+            function initTheme() {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                htmlElement.setAttribute('data-theme', savedTheme);
+            }
+            
+            /**
+             * Toggle theme between light and dark
+             */
+            function toggleTheme() {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                htmlElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+            }
+            
+            // Drawer Navigation Handler
+            const menuButton = document.getElementById('mobileMenuButton');
+            const drawer = document.getElementById('mobileDrawer');
+            const drawerOverlay = document.getElementById('mobileDrawerOverlay');
+            const drawerClose = document.getElementById('mobileDrawerClose');
+            
+            /**
+             * Open drawer navigation
+             */
+            function openDrawer() {
+                drawer.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            /**
+             * Close drawer navigation
+             */
+            function closeDrawer() {
+                drawer.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+            
+            // Notifications Panel Handler
+            const notificationsToggle = document.getElementById('mobile-notifications-toggle');
+            const notificationsPanel = document.getElementById('mobileNotificationsPanel');
+            const notificationsOverlay = document.getElementById('mobileNotificationsOverlay');
+            const notificationsClose = document.getElementById('mobileNotificationsClose');
+            
+            /**
+             * Open notifications panel
+             */
+            function openNotifications() {
+                notificationsPanel.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            /**
+             * Close notifications panel
+             */
+            function closeNotifications() {
+                notificationsPanel.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+            
+            // Initialize on DOM load
+            initTheme();
+            
+            // Event listeners
+            if (themeToggle) {
+                themeToggle.addEventListener('click', toggleTheme);
+            }
+            
+            if (menuButton) {
+                menuButton.addEventListener('click', openDrawer);
+            }
+            
+            if (drawerClose) {
+                drawerClose.addEventListener('click', closeDrawer);
+            }
+            
+            if (drawerOverlay) {
+                drawerOverlay.addEventListener('click', closeDrawer);
+            }
+            
+            if (notificationsToggle) {
+                notificationsToggle.addEventListener('click', openNotifications);
+            }
+            
+            if (notificationsClose) {
+                notificationsClose.addEventListener('click', closeNotifications);
+            }
+            
+            if (notificationsOverlay) {
+                notificationsOverlay.addEventListener('click', closeNotifications);
+            }
+        })();
+    </script>
+</body>
+</html>
